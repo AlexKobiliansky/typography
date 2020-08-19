@@ -6,6 +6,15 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-intro
+    height: 440px
+
+  .intro-content
+    width: 100%
+    padding: 35px
+
+
+
   .head-content-wrapper
     &:after
       width: calc((100vw - 930px)/2)
@@ -29,6 +38,15 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-intro
+    height: 360px
+
+  .intro-content
+    h1
+      font-size: 28px
+    p
+      font-size: 16px
 
   .head-content-wrapper
     &:after
@@ -76,6 +94,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-intro
+    height: 300px
+
+  .intro-left
+    display: none
+
+  .intro-right
+    width: 100%!important
+
+  .intro-content
+    padding: 35px 15px
+    
+
   .head-content-wrapper
     padding-left: 10px
     padding-right: 10px
