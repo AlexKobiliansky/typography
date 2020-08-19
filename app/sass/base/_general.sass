@@ -50,6 +50,7 @@ a:hover, a:active, a:focus
 a
   color: $acc-blue
   text-decoration: none
+  +mt(.3s)
 
 a, li, button
   outline: none!important
@@ -64,3 +65,22 @@ ul
 // ======= END TEMPLATE STYLES =======
 
 
+.btn
+  display: inline-block
+  line-height: 1
+  white-space: nowrap
+  text-align: center
+  +mt(.3s)
+  text-transform: uppercase
+  width: 212px
+  border-width: 2px
+  border-style: solid
+  color: $text
+  padding: 15px
+  font-weight: normal
+
+.btn-blue
+  border-color: $acc-blue
+  &:hover
+    color: #fff
+    background-color: $acc-blue

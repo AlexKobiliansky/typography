@@ -6,14 +6,105 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .head-content-wrapper
+    &:after
+      width: calc((100vw - 930px)/2)
+      right: calc(0px - (100vw - 930px)/2)
+
+  .mnu-line
+    display: none
+
+  .topline
+    flex-wrap: wrap
+    .contacts
+      width: 50%
+      margin-top: 20px
+      a
+        text-align: left
+    .btn
+      margin-top: 20px
+
+  .hamburger
+    display: block
+
 // ≥992px
 +media-breakpoint-down(md)
+
+  .head-content-wrapper
+    &:after
+      width: calc((100vw - 690px)/2)
+      right: calc(0px - (100vw - 690px)/2)
+
+  .search-form
+    width: 180px
+    input
+      padding-left: 5px
+      padding-right: 5px
+
+  .topline
+    .address
+      width: 180px
+      font-size: 13px
+
 
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .hamburger
+    order: 0
+
+  .topline
+    .address
+      order: 1
+      margin-top: 5px
+
+
+  .mobile-logo
+    display: block
+    width: 130px
+
+  .head-logo-wrapper
+    display: none
+  .head-content-wrapper
+    width: 100%
+    padding-top: 15px
+    &:after
+      width: calc((100vw - 510px)/2)
+      right: calc(0px - (100vw - 510px)/2)
+
+
+
 // ≥480px
 +media-breakpoint-down(xs)
+  .head-content-wrapper
+    padding-left: 10px
+    padding-right: 10px
+    &:after
+      display: none
+
+  .search-form
+    order: 1
+    width: 100%
+
+  .topline
+    padding-left: 0
+    .contacts
+      order: 2
+      margin-top: 10px
+      width: 100%
+      a
+        text-align: center
+    .btn
+      order: 3
+      margin-left: auto
+      margin-right: auto
+    .address
+      width: 100%
+      text-align: center
+      margin-top: 15px
+
+  .mobile-logo
+    margin-bottom: 10px
 
 
 /*==========  Mobile First  ==========*/
