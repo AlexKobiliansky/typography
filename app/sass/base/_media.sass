@@ -6,6 +6,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-links
+    padding: 50px 0 20px
+
+  .links-wrap
+    flex-wrap: wrap
+
+  .link-item
+    width: calc(50% - 10px)
+    margin-bottom: 30px
+
   .steps-img
     width: 300px
 
@@ -55,6 +65,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .link-item
+    &:nth-child(1)
+      .link-item-img
+        top: 68px
+    &:nth-child(2)
+      .link-item-img
+        right: -50px
   .s-steps
     height: auto
     padding: 50px 0
@@ -140,6 +157,9 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .link-item
+    width: 100%
+
   .work-item
     &.last-item
       h3
@@ -180,6 +200,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .link-item
+    &:nth-child(2)
+      .link-item-img
+        width: 190px
+        right: -15px
+    &:nth-child(3)
+      .link-item-img
+        bottom: -19px
 
   .section-title
     font-size: 24px
@@ -253,6 +282,21 @@
 
 @media (max-width: 390px)
 
+  .link-item
+    padding-top: 0
+    height: 180px
+    &:nth-child(1)
+      .link-item-img
+        width: 150px
+        top: 66px
+    &:nth-child(2)
+      .link-item-img
+        width: 150px
+    &:nth-child(3)
+      .link-item-img
+        width: 135px
+        bottom: 0
+        right: -15px
 
   .step-item
     font-size: 17px
