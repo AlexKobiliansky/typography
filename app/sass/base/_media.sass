@@ -6,6 +6,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .work-item
+    &-overlay
+      font-size: 18px
+
   .s-intro
     height: 440px
 
@@ -39,6 +43,26 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .works-wrap
+    grid-template-columns: repeat(4, 1fr)
+
+  .work-item
+    &.last-item
+      grid-column: 3/5
+    &-overlay
+      font-size: 14px
+
+
+
+  .advantages-wrap
+    flex-wrap: wrap
+    justify-content: center
+
+  .adv-item
+    width: 33.33333%
+    margin-bottom: 30px
+    padding: 0 15px
+
   .s-intro
     height: 360px
 
@@ -68,6 +92,20 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .work-item
+    &.last-item
+      h3
+        font-size: 20px
+      a
+        font-size: 20px
+
+
+  .adv-item
+    font-size: 14px
+    img
+      height: 60px
+
+
   .hamburger
     order: 0
 
@@ -94,6 +132,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .works-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .work-item
+    &.last-item
+      grid-column: 1/3
+      height: 155px
+
+
+  .s-advantages
+    padding: 50px 0
+
+  .advantages-wrap
+    justify-content: flex-start
+    margin-bottom: 15px
+
+  .adv-item
+    width: 50%
+    font-size: 16px
 
   .s-intro
     height: 300px
@@ -138,6 +196,10 @@
   .mobile-logo
     margin-bottom: 10px
 
+@media (max-width: 390px)
+  .adv-item
+    font-size: 14px
+    padding: 0 5px
 
 /*==========  Mobile First  ==========*/
 
