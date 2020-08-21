@@ -6,6 +6,18 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .steps-img
+    width: 300px
+
+  .step-item-3
+    left: 326px
+
+  .step-arrow-4
+    transform: rotate(-87deg)
+    width: 100px
+    left: 700px
+    top: 311px
+
   .work-item
     &-overlay
       font-size: 18px
@@ -42,6 +54,42 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-steps
+    height: auto
+    padding: 50px 0
+    .btn-wrap
+      display: block
+
+  .steps-desc
+    width: auto
+    text-align: center
+    margin-bottom: 40px
+    .btn
+      display: none
+
+  .steps-img
+    position: relative
+    top: 0
+    left: 0
+    display: block
+    margin: 0 auto
+    margin-bottom: 50px
+
+  .step-arrow
+    display: none
+
+  .step-item
+    position: relative
+    left: 0!important
+    top: 0!important
+    right: auto!important
+    display: flex
+    margin-bottom: 20px
+    width: calc(55%)
+    margin-left: auto
+    margin-right: auto
+
 
   .works-wrap
     grid-template-columns: repeat(4, 1fr)
@@ -133,6 +181,12 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .section-title
+    font-size: 24px
+
+  .step-item
+    width: 100%
+
   .works-wrap
     grid-template-columns: repeat(2, 1fr)
 
@@ -140,6 +194,7 @@
     &.last-item
       grid-column: 1/3
       height: 155px
+      border-width: 3px
 
 
   .s-advantages
@@ -197,6 +252,19 @@
     margin-bottom: 10px
 
 @media (max-width: 390px)
+
+
+  .step-item
+    font-size: 17px
+    img
+      width: 75px
+
+  .steps-img
+    width: auto
+    height: auto
+    max-width: 280px
+
+
   .adv-item
     font-size: 14px
     padding: 0 5px
