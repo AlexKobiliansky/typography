@@ -78,12 +78,20 @@ ul
   color: $text
   padding: 15px
   font-weight: normal
+  box-shadow: none
+  background-color: transparent
+  cursor: pointer
 
 .btn-blue
   border-color: $acc-blue
   &:hover
     color: #fff
     background-color: $acc-blue
+  &.disabled
+    color: #fff
+    background-color: $acc-blue
+    filter: grayscale(.5)
+
 
 .btn-green
   border-color: $acc-green
@@ -96,3 +104,29 @@ ul
   line-height: 1
   font-weight: 700
   margin-bottom: 20px
+
+form
+  h2
+    font-size: 20px
+    line-height: 1.1
+    margin-bottom: 20px
+    text-align: center
+  label
+    display: block
+  input, textarea
+    width: 100%
+    color: $text
+    &::placeholder
+      color: #7b7b7b
+    &:focus
+      border-color: $acc-blue
+    &.error
+      color: red!important
+      border-color: red!important
+      &::placeholder
+        color: red!important
+  .btn-wrap
+    text-align: center
+    margin-top: 25px
+  .help-block
+    display: none!important
