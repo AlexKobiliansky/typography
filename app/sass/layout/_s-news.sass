@@ -1,4 +1,4 @@
-.stock-item
+.news-item
   margin-bottom: 30px
   display: block
   &-img
@@ -8,7 +8,7 @@
     width: 100%
     margin-bottom: 15px
     position: relative
-    background-color: #ff5465
+    background-color: $acc-green
     box-shadow: 0 0 15px 0 rgba(#000, .1)
     &:before
       content: ''
@@ -17,7 +17,7 @@
       top: 0
       right: 0
       bottom: 0
-      background-color: rgba(#ff5465, .4)
+      background-color: rgba($acc-green, .4)
       opacity: 0
       +mt(.3s)
   &-period
@@ -45,7 +45,6 @@
     display: block
     +mt(.3s)
   &:hover
-    .stock-item-img
+    .news-item-img
       &:before
         opacity: 1
-
