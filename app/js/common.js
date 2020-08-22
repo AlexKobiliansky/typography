@@ -79,6 +79,21 @@ $(document).ready(function(){
     });
 
 
+    $('.preloader').fadeOut();
+
+    $(function() {
+        $("a[href='#popup-form']").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in"
+        })
+    });
 
     $.validate({
         form : '.contact-form',

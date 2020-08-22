@@ -225,6 +225,16 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .popup-form
+    padding: 50px 25px
+    outline-offset: 0
+    input, textarea
+      padding: 12px 15px
+    h3
+      font-size: 28px
+    p
+      font-size: 14px
+
   .foot-mnu
     width: 100%
     text-align: center
@@ -344,6 +354,16 @@
     margin-bottom: 10px
 
 @media (max-width: 390px)
+
+  .popup-form
+    .form-labels-wrap
+      flex-direction: column
+      label
+        width: 100%
+
+  .label-checkbox
+    span
+      font-size: 12px
 
   .link-item
     padding-top: 0
