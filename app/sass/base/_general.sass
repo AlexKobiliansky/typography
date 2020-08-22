@@ -289,3 +289,48 @@ form
     transform: scale(0)
   50%
     transform: scale(1)
+
+
+.breadcrumbs
+  font-size: 14px
+  font-weight: 300
+  line-height: 1
+  padding: 20px 0
+  a
+    display: inline-block
+    color: #c7c7c7
+    &:hover
+      color: $acc-blue
+    &:after
+      content: ' |'
+      color: #c7c7c7
+    &:last-child
+      color: $text
+      pointer-events: none
+      &:after
+        display: none
+
+.page-title
+  font-size: 30px
+  line-height: 1
+  margin-bottom: 10px
+
+.page-desc
+  font-weight: 300
+  line-height: 1.25
+  margin-bottom: 30px
+
+.with-before
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    height: 100%
+    width: calc(70px + ((100vw - 1140px)/2))
+    right: 0
+    background-repeat: repeat-y
+    background-position: 48px -100px
+  &-stocks
+    &:before
+      background-color: #ff5465
+      background-image: url('../img/stocks-before-bg.png')

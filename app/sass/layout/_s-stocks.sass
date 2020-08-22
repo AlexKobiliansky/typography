@@ -1,0 +1,52 @@
+.stock-item
+  margin-bottom: 30px
+  display: block
+  &-img
+    +bg-cover
+    height: 245px
+    display: block
+    width: 100%
+    margin-bottom: 15px
+    position: relative
+    background-color: #ff5465
+    box-shadow: 0 0 15px 0 rgba(#000, .1)
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(#ff5465, .4)
+      opacity: 0
+      +mt(.3s)
+  &-period
+    display: block
+    line-height: 1
+    position: relative
+    font-size: 14px
+    color: $acc-green
+    padding-left: 30px
+    margin-bottom: 12px
+    &:before
+      content: ''
+      position: absolute
+      width: 19px
+      height: 19px
+      background-image: url('../img/icons/cal-icon.svg')
+      +bg-cover
+      left: 0
+      top: calc(50% - 11px)
+  &-title
+    line-height: 1.2
+    font-size: 20px
+    font-weight: 300
+    color: $text
+    display: block
+    +mt(.3s)
+  &:hover
+    .stock-item-img
+      &:before
+        opacity: 1
+    .stock-item-title
+      color: #ff5465

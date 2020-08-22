@@ -6,6 +6,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .with-before
+    &:before
+      width: calc(70px + ((100vw - 930px)/2))
+
   .nopage-wrap
     height: calc(100vh - 163px)
 
@@ -73,6 +77,15 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .with-before
+    &:before
+      width: calc(70px + ((100vw - 690px)/2))
+
+  .stock-item
+    &-img
+      height: 200px
+
 
   .foot-line
     flex-wrap: wrap
@@ -234,6 +247,10 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .stock-item
+    &-img
+      height: 240px
+
   .nopage-wrap
     height: calc(100vh - 360px)
     padding: 0 15px
@@ -384,6 +401,10 @@
     margin-bottom: 10px
 
 @media (max-width: 390px)
+
+  .stock-item
+    &-img
+      height: 180px
 
   .popup-form
     .form-labels-wrap
