@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .foot-contacts
+    display: none
+
   .contacts-wrapper
     width: calc(100% - (100% - 930px)/2)
 
@@ -67,6 +70,13 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .foot-line
+    flex-wrap: wrap
+
+  .foot-socials
+    width: 100%
+    margin-top: 30px
 
   .contacts-wrapper
     width: calc(100% - (100% - 690px)/2)
@@ -163,6 +173,11 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .foot-mnu
+    left: 0
+    ul
+      columns: auto
+
   .contacts-wrapper
     width: calc(100% - (100% - 510px)/2)
 
@@ -209,6 +224,29 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .foot-mnu
+    width: 100%
+    text-align: center
+    li
+      font-size: 18px
+      font-weight: normal
+      margin-bottom: 8px
+
+  .foot-line
+    padding: 40px 0
+    .logo-wrap
+      width: 100%
+      text-align: center
+      order: 2
+      margin-top: 20px
+    .img-responsive
+      margin-left: auto
+      margin-right: auto
+
+  .foot-socials
+    order: 3
+    text-align: center
 
   .contacts-wrapper
     width: 100%
