@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .con-wrap
+    columns: auto
+
   .with-before
     &:before
       width: calc(70px + ((100vw - 930px)/2))
@@ -77,6 +80,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .with-before-contacts
+    #map
+      width: calc(100% - 250px)
+    .contacts-block
+      width: 250px
+    .s-contacts-form
+      padding: 30px
+      h2
+        font-size: 22px
+
 
   .with-before
     &:before
@@ -318,11 +332,11 @@
     flex-direction: column-reverse
 
   #map
-    width: 100%
+    width: 100%!important
     height: 400px
 
   .contacts-blocks
-    width: 100%
+    width: 100%!important
     padding: 0 15px
     margin-bottom: 40px
 
