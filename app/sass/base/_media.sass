@@ -6,6 +6,11 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .history-line
+    &:before
+      width: calc((100vw - 930px)/2)
+      left: calc(0px - (100vw - 930px)/2)
+
   .s-text
     margin-bottom: 60px
     &:before
@@ -97,6 +102,68 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-history
+    padding: 100px 0 0
+
+  .history-wrap
+    flex-direction: column
+
+  .history-item
+    margin-bottom: 80px
+    position: relative
+    &-circle
+      &:before
+        width: 42px
+        height: 1px
+        top: calc(50% - 0.5px)!important
+        bottom: auto!important
+      &:after
+        top: calc(50% - 8px)!important
+        bottom: auto!important
+    &:nth-child(odd)
+      .history-item-circle
+        &:before
+          left: -42px
+          right: auto
+        &:after
+          left: -58px
+          right: auto
+      .history-item-content
+        left: -400%
+    &:nth-child(even)
+      .history-item-circle
+        &:before
+          right: -42px
+          left: auto
+        &:after
+          right: -58px
+          left: auto
+      .history-item-content
+        right: -400%
+        left: auto
+    &-content
+      top: 12px!important
+      bottom: auto!important
+    &:after
+      content: ''
+      width: 2px
+      height: 80px
+      background-color: #dcdcdc
+      position: absolute
+      left: calc(50% - 1px)
+      bottom: -80px
+    &:last-child
+      &:after
+        display: none
+
+
+  .history-line
+    display: none
+
+  .with-before-about
+    &:before
+      display: none
 
   .text-wrap
     display: block
@@ -246,6 +313,32 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .history-wrap
+    padding: 0
+    display: block
+
+  .history-item
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+    &-content
+      position: relative
+      left: 0!important
+      right: auto!important
+      top: 0!important
+      bottom: auto!important
+      width: auto
+      text-align: left
+    &-circle
+      margin-right: 15px
+      &:before, &:after
+        display: none
+    &:after
+      display: none
+
   .text-img
     height: 300px
 
@@ -306,6 +399,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-history
+    padding-top: 70px
+
+  .history-item
+    &-year
+      font-size: 36px
+    &-desc
+      font-size: 14px
 
   .prices-top
     padding: 20px 10px
@@ -457,9 +559,14 @@
     padding: 35px 15px
 
 
+  .head-wrap
+    position: relative
+    width: calc(100% + 30px)
+    left: -15px
+
   .head-content-wrapper
-    padding-left: 10px
-    padding-right: 10px
+    padding-left: 15px
+    padding-right: 15px
     &:after
       display: none
 
